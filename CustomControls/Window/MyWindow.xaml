@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="MyCustomControls.MyWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="760" d:DesignWidth="1000">
+    <DockPanel LastChildFill="True">
+        <Border DockPanel.Dock="Top" CornerRadius="4,4,0,0" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="Beige">
+            <TextBlock x:Name="txtHeader" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></TextBlock>
+        </Border>
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
+                    <GradientStop Color="#B7B5B5" Offset="0.0"/>
+                    <GradientStop Color="White" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </DockPanel>
+</UserControl>
